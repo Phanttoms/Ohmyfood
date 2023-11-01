@@ -47,4 +47,13 @@ Body {
   font-weight: 500;
   line-height: normal;
   color: #353535;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
 }/*# sourceMappingURL=style.css.map */
