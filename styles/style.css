@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header .header__title {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.8rem 5.5rem;
+  z-index: 1;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header .header__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eaeaea;
+  padding: 1rem 5.5rem;
+  gap: 1.6rem;
+}
+.header .header__location--dot {
+  color: #353535;
+  width: 0.7rem;
+}
+.header .header__location--content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #353535;
+}/*# sourceMappingURL=style.css.map */

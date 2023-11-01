@@ -1,0 +1,62 @@
+// Variable Couleur
+$main-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$grey-color: #eaeaea;
+$main-background: #f6f6f6;
+$secondary-background: #fff;
+$dark-grey: #353535;
+
+// Reset General
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// General
+Body {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+// Header
+.header {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	.header__title {
+		font-family: "Shrikhand", sans-serif;
+		text-align: center;
+		font-size: 1.875rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		padding: 0.8rem 5.5rem;
+		z-index: 1;
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	}
+	.header__location {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background-color: $grey-color;
+		padding: 1rem 5.5rem;
+		gap: 1.6rem;
+		&--dot {
+			color: $dark-grey;
+			width: 0.7rem;
+		}
+		&--content {
+			font-family: "Roboto", sans-serif;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			color: $dark-grey;
+		}
+	}
+}
