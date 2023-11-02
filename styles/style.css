@@ -55,5 +55,41 @@ Body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #f6f6f6;
+  padding: 2.6rem;
+}
+.reservation .reservation__title {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+.reservation .reservation__content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #353535;
+}
+.reservation .reservation__button {
+  width: 13.625rem;
+  height: 3.125rem;
+  border-radius: 1.5625rem;
+  margin: 2rem 2rem 1rem 2rem;
+  border: none;
+  background: linear-gradient(0deg, #9356dc -20.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.reservation .reservation__button--content {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
