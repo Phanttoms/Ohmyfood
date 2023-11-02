@@ -1,12 +1,4 @@
-// Variable Couleur
-$main-color: #9356dc;
-$secondary-color: #ff79da;
-$tertiary-color: #99e2d0;
-$grey-color: #eaeaea;
-$main-background: #f6f6f6;
-$secondary-background: #fff;
-$dark-grey: #353535;
-$black: #000;
+@import "./../sass/variable.scss";
 
 // Mixin
 @mixin h2-title-homepage {
