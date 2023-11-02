@@ -96,12 +96,15 @@ Body {
 		line-height: normal;
 		color: $dark-grey;
 	}
-	.reservation__button {
+	.reservation__navbutton {
 		width: 13.625rem;
 		height: 3.125rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
 		border-radius: 1.5625rem;
 		margin: 2rem 2rem 1rem 2rem;
-		border: none;
 		background: linear-gradient(
 			0deg,
 			$main-color -20.44%,
