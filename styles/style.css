@@ -1,15 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-Body {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -49,6 +37,22 @@ Body {
   color: #353535;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+Body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 .reservation {
   display: flex;
   flex-direction: column;
@@ -82,7 +86,6 @@ Body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   border-radius: 1.5625rem;
   margin: 2rem 2rem 1rem 2rem;
   background: linear-gradient(0deg, #9356dc -20.44%, #ff79da 123.93%);
@@ -95,4 +98,83 @@ Body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem 0 4rem 1.25rem;
+}
+.fonctionnement__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+.fonctionnement__bigbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+}
+.fonctionnement__bigbox__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20.1rem;
+  height: 4.5rem;
+  margin-bottom: 1.6rem;
+  background: #f6f6f6;
+  border-radius: 1.25rem;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement__bigbox__box--circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #9356dc;
+  position: relative;
+  margin-right: 0.5rem;
+  right: 4%;
+}
+.fonctionnement__bigbox__box--circle--content {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.fonctionnement__bigbox__box--phone {
+  width: 0.8rem;
+  height: 1.2rem;
+  color: #7e7e7e;
+}
+.fonctionnement__bigbox__box--list {
+  width: 1rem;
+  height: 0.9rem;
+  color: #7e7e7e;
+}
+.fonctionnement__bigbox__box--store {
+  width: 1.125rem;
+  height: 1.12rem;
+  color: #9356dc;
+}
+.fonctionnement__bigbox__box--content {
+  width: 13rem;
+  height: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

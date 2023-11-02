@@ -1,0 +1,36 @@
+// Titles
+@mixin h2-title-homepage {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	color: $black;
+}
+
+// Buttons
+@mixin button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5625rem;
+	margin: 2rem 2rem 1rem 2rem;
+	background: linear-gradient(
+		0deg,
+		$main-color -20.44%,
+		$secondary-color 123.93%
+	);
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+// Texts Buttons
+@mixin text-button {
+	color: $white;
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+// Cartes
