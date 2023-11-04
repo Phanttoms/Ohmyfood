@@ -8,6 +8,15 @@
 	color: $black;
 }
 
+@mixin h4-title {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	color: $black;
+}
+
 // Buttons
 @mixin button {
 	display: flex;

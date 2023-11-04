@@ -12,6 +12,7 @@
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -33,11 +34,11 @@ Body {
 	text-align: center;
 	background-color: $main-background;
 	padding: 2.6rem;
-	.reservation__title {
+	&__title {
 		padding: 0 0.5rem 0.5rem 0.5rem;
 		@include h2-title-homepage;
 	}
-	.reservation__content {
+	&__content {
 		font-family: "Roboto", sans-serif;
 		font-size: 1.125rem;
 		font-style: normal;
@@ -45,7 +46,7 @@ Body {
 		line-height: normal;
 		color: $dark-grey;
 	}
-	.reservation__navbutton {
+	&__navbutton {
 		width: 13.625rem;
 		height: 3.125rem;
 		@include button;
@@ -60,7 +61,7 @@ Body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 3rem 0 4rem 1.25rem;
+	padding: 3rem 0 1.5rem 1.25rem;
 	&__title {
 		@include h2-title-homepage;
 	}
@@ -131,3 +132,60 @@ Body {
 }
 
 // 3eme Section | Restaurants
+.restaurants {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: $main-background;
+	padding: 3.4rem 1.1rem 4.1rem 1.1rem;
+	&__title {
+		@include h2-title-homepage;
+		margin-bottom: 1.1rem;
+	}
+	&__bigbox {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		&__box {
+			width: 100%;
+			height: auto;
+			margin: 0 0 1.1rem 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-self: center;
+			background-color: $white;
+			border-radius: 0.9rem;
+			&--img {
+				width: 100%;
+				height: 14.4375rem;
+				object-fit: cover;
+				border-radius: 0.9rem 0.9rem 0 0;
+			}
+			&__content {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 1rem 1rem 0 1rem;
+				align-items: center;
+				&--content {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					&--title {
+						@include h4-title;
+					}
+					&--text {
+						color: $black;
+						font-family: "Roboto", sans-serif;
+						font-size: 1rem;
+						font-style: normal;
+						font-weight: 300;
+						line-height: normal;
+					}
+				}
+			}
+		}
+	}
+}
