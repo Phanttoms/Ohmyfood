@@ -8,10 +8,25 @@
 	padding: 1.5rem;
 	&__title {
 		@include h4-footer;
+		padding-bottom: 1rem;
 	}
 	&__bigbox {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		gap: 0.4rem;
+		&--content {
+			color: $white;
+			font-family: "Roboto", sans-serif;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			&--logo {
+				width: 0.6rem;
+				height: 0.8rem;
+				margin-right: 1rem;
+			}
+		}
 	}
 }
