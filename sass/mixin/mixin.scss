@@ -17,6 +17,15 @@
 	color: $black;
 }
 
+@mixin h4-footer {
+	color: $white;
+	font-family: "Shrikhand", sans-serif;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
 // Buttons
 @mixin button {
 	display: flex;

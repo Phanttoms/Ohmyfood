@@ -37,6 +37,23 @@
   color: #353535;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+}
+.info__title {
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

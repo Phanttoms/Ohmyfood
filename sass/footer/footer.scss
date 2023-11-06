@@ -1,0 +1,17 @@
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	height: auto;
+	background-color: $dark-grey;
+	padding: 1.5rem;
+	&__title {
+		@include h4-footer;
+	}
+	&__bigbox {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
