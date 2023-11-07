@@ -223,6 +223,9 @@ Body {
 				.btnHeart:checked + .btnLabel .fa-solid {
 					animation: dislike 0.2s ease-out normal forwards;
 				}
+				.btnHeart:checked + .btnLabel .fa-regular {
+					animation: like 0.2s ease-out normal forwards;
+				}
 				.btnLabel {
 					display: flex;
 					justify-content: flex-end;
@@ -248,5 +251,14 @@ Body {
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@keyframes like {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
 	}
 }
