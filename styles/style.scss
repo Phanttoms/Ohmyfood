@@ -54,6 +54,9 @@ Body {
 			@include text-button;
 		}
 	}
+	&__navbutton:hover {
+		@include buttonHover;
+	}
 }
 
 // 2eme Section | Fonctionnement
@@ -213,6 +216,9 @@ Body {
 						font-weight: 300;
 						line-height: normal;
 					}
+				}
+				&--like {
+					@include heart;
 				}
 			}
 		}

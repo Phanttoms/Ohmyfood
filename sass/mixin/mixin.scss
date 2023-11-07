@@ -39,8 +39,15 @@
 		$secondary-color 123.93%
 	);
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+	opacity: 1;
+	transition: opacity 0.5s ease-out;
 }
 
+@mixin buttonHover {
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+	opacity: 0.7;
+	transition: opacity 0.5s ease-out;
+}
 // Texts Buttons
 @mixin text-button {
 	color: $white;
@@ -49,6 +56,11 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+}
+
+// heart
+@mixin heart {
+	font-size: 1.5rem;
 }
 
 // Cartes
