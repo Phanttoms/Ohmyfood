@@ -217,10 +217,36 @@ Body {
 						line-height: normal;
 					}
 				}
-				&--like {
-					@include heart;
+				.btnHeart {
+					display: none;
+				}
+				.btnHeart:checked + .btnLabel .fa-solid {
+					animation: dislike 0.2s ease-out normal forwards;
+				}
+				.btnLabel {
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					width: 100%;
+					height: auto;
+					margin-right: 1rem;
+					&__like {
+						@include heart-empty;
+					}
+					.heart-full {
+						@include heart-full;
+					}
 				}
 			}
 		}
+	}
+}
+
+@keyframes dislike {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }

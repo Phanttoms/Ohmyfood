@@ -321,6 +321,37 @@ Body {
   font-weight: 300;
   line-height: normal;
 }
-.restaurants__bigbox__box__content--like {
+.restaurants__bigbox__box__content .btnHeart {
+  display: none;
+}
+.restaurants__bigbox__box__content .btnHeart:checked + .btnLabel .fa-solid {
+  animation: dislike 0.2s ease-out normal forwards;
+}
+.restaurants__bigbox__box__content .btnLabel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-right: 1rem;
+}
+.restaurants__bigbox__box__content .btnLabel__like {
   font-size: 1.5rem;
+  position: absolute;
+}
+.restaurants__bigbox__box__content .btnLabel .heart-full {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+
+@keyframes dislike {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

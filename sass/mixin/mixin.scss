@@ -59,8 +59,16 @@
 }
 
 // heart
-@mixin heart {
+@mixin heart-empty {
 	font-size: 1.5rem;
+	position: absolute;
 }
 
+@mixin heart-full {
+	color: transparent;
+	background-image: linear-gradient($secondary-color, $main-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	opacity: 0;
+}
 // Cartes
