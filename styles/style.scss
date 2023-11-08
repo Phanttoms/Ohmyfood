@@ -196,12 +196,16 @@ Body {
 			}
 
 			&__content {
+				width: 100%;
+				height: auto;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				padding: 1rem 1rem 0 1rem;
 				align-items: center;
 				&--content {
+					width: 100%;
+					height: auto;
 					display: flex;
 					flex-direction: column;
 					justify-content: center;

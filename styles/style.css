@@ -294,6 +294,8 @@ Body {
   border-radius: 0.9rem 0.9rem 0 0;
 }
 .restaurants__bigbox__box__content {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -301,6 +303,8 @@ Body {
   align-items: center;
 }
 .restaurants__bigbox__box__content--content {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
