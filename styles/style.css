@@ -79,7 +79,7 @@
     flex-direction: row;
   }
 }
-.info__bigbox--content {
+.info__content {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -88,11 +88,14 @@
   line-height: normal;
 }
 @media (min-width: 1020px) {
-  .info__bigbox--content {
+  .info__content {
     padding-right: 2rem;
   }
+  .info__content:first-of-type {
+    padding-right: 0.5rem;
+  }
 }
-.info__bigbox--content--logo {
+.info__content--logo {
   width: 0.6rem;
   height: 0.8rem;
   margin-right: 1rem;
@@ -202,7 +205,7 @@ Body {
     flex-direction: row;
   }
 }
-.fonctionnement__bigbox__box {
+.fonctionnement__box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -214,11 +217,11 @@ Body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 1020px) {
-  .fonctionnement__bigbox__box {
+  .fonctionnement__box {
     margin-right: 2.2rem;
   }
 }
-.fonctionnement__bigbox__box--circle {
+.fonctionnement__box--circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +233,7 @@ Body {
   margin-right: 0.5rem;
   right: 4%;
 }
-.fonctionnement__bigbox__box--circle--content {
+.fonctionnement__box--circle--content {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
@@ -238,22 +241,22 @@ Body {
   font-weight: 500;
   line-height: normal;
 }
-.fonctionnement__bigbox__box--phone {
+.fonctionnement__box--phone {
   width: 0.8rem;
   height: 1.2rem;
   color: #7e7e7e;
 }
-.fonctionnement__bigbox__box--list {
+.fonctionnement__box--list {
   width: 1rem;
   height: 0.9rem;
   color: #7e7e7e;
 }
-.fonctionnement__bigbox__box--store {
+.fonctionnement__box--store {
   width: 1.125rem;
   height: 1.12rem;
   color: #9356dc;
 }
-.fonctionnement__bigbox__box--content {
+.fonctionnement__box--content {
   width: 13rem;
   height: 0.9rem;
   font-family: "Roboto", sans-serif;
@@ -306,7 +309,7 @@ Body {
     justify-content: center;
   }
 }
-.restaurants__bigbox__box {
+.restaurants__box {
   width: 100%;
   height: auto;
   margin: 0 0 1.1rem 0;
@@ -318,12 +321,12 @@ Body {
   border-radius: 0.9rem;
 }
 @media (min-width: 1020px) {
-  .restaurants__bigbox__box {
+  .restaurants__box {
     width: 29rem;
     margin: 0 1rem 2rem 1rem;
   }
 }
-.restaurants__bigbox__box--imgcontent {
+.restaurants__box--imgcontent {
   width: 100%;
   height: 100%;
   position: relative;
@@ -331,7 +334,7 @@ Body {
   justify-content: flex-end;
   align-items: flex-start;
 }
-.restaurants__bigbox__box--imgcontent--new {
+.restaurants__box--imgcontent--new {
   width: 5rem;
   height: 1.8rem;
   background-color: #99e2d0;
@@ -342,7 +345,7 @@ Body {
   position: absolute;
   margin: 1rem;
 }
-.restaurants__bigbox__box--imgcontent--new--content {
+.restaurants__box--imgcontent--new--content {
   color: #008766;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -351,14 +354,14 @@ Body {
   font-weight: 500;
   line-height: normal;
 }
-.restaurants__bigbox__box--imgcontent--img {
+.restaurants__box--imgcontent--img {
   width: 100%;
   height: 14.4375rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.9rem 0.9rem 0 0;
 }
-.restaurants__bigbox__box__content {
+.restaurants__box__content {
   width: 100%;
   height: auto;
   display: flex;
@@ -367,14 +370,14 @@ Body {
   padding: 1rem 1rem 0 1rem;
   align-items: center;
 }
-.restaurants__bigbox__box__content--content {
+.restaurants__box__content--content {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.restaurants__bigbox__box__content--content--title {
+.restaurants__box__content--content--title {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
@@ -382,7 +385,7 @@ Body {
   line-height: normal;
   color: #000;
 }
-.restaurants__bigbox__box__content--content--text {
+.restaurants__box__content--content--text {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -390,16 +393,16 @@ Body {
   font-weight: 300;
   line-height: normal;
 }
-.restaurants__bigbox__box__content .btnHeart {
+.restaurants__box__content .btnHeart {
   display: none;
 }
-.restaurants__bigbox__box__content .btnHeart:checked + .btnLabel .fa-solid {
+.restaurants__box__content .btnHeart:checked + .btnLabel .fa-solid {
   animation: dislike 0.2s ease-out normal forwards;
 }
-.restaurants__bigbox__box__content .btnHeart:checked + .btnLabel .fa-regular {
+.restaurants__box__content .btnHeart:checked + .btnLabel .fa-regular {
   animation: like 0.2s ease-out normal forwards;
 }
-.restaurants__bigbox__box__content .btnLabel {
+.restaurants__box__content .btnLabel {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -407,11 +410,11 @@ Body {
   height: auto;
   margin-right: 1rem;
 }
-.restaurants__bigbox__box__content .btnLabel__like {
+.restaurants__box__content .btnLabel__like {
   font-size: 1.5rem;
   position: absolute;
 }
-.restaurants__bigbox__box__content .btnLabel .heart-full {
+.restaurants__box__content .btnLabel .heart-full {
   color: transparent;
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
