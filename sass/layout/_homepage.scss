@@ -1,0 +1,226 @@
+.reservation {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: $main-background;
+	padding: 2.6rem;
+	&__title {
+		padding: 0 0.5rem 0.5rem 0.5rem;
+		@include h2-title-homepage;
+	}
+	&__content {
+		font-family: "Roboto", sans-serif;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		color: $dark-grey;
+	}
+}
+
+// 2eme Section | Fonctionnement
+.fonctionnement {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	padding: 3rem 0 1.5rem 1.25rem;
+
+	@media (min-width: 1020px) {
+		max-width: 1020px;
+		margin: auto;
+	}
+	&__title {
+		@include h2-title-homepage;
+	}
+	&__bigbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1.6rem;
+
+		@media (min-width: 1020px) {
+			flex-direction: row;
+		}
+	}
+	&__box {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 20.1rem;
+		height: 4.5rem;
+		margin-bottom: 1.6rem;
+		background: $main-background;
+		border-radius: 1.25rem;
+		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+		@media (min-width: 1020px) {
+			margin-right: 2.2rem;
+		}
+		&--circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $main-color;
+			position: relative;
+			margin-right: 0.5rem;
+			right: 4%;
+			&--content {
+				color: $white;
+				font-family: "Roboto", sans-serif;
+				font-size: 0.8rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
+		}
+		&--phone {
+			width: 0.8rem;
+			height: 1.2rem;
+			color: $grey-tint;
+		}
+		&--list {
+			width: 1rem;
+			height: 0.9rem;
+			color: $grey-tint;
+		}
+		&--store {
+			width: 1.125rem;
+			height: 1.12rem;
+			color: $main-color;
+		}
+		&--content {
+			width: 13rem;
+			height: 0.9rem;
+			font-family: "Roboto", sans-serif;
+			font-size: 1rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+// 3eme Section | Restaurants
+.restaurants {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $main-background;
+	padding: 3.4rem 1.1rem 4.1rem 1.1rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		max-width: 1020px;
+		width: 100%;
+	}
+	&__title {
+		@include h2-title-homepage;
+		margin-bottom: 1.1rem;
+
+		@media (min-width: 1020px) {
+			padding-left: 2rem;
+		}
+	}
+	&__bigbox {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+
+		@media (min-width: 1020px) {
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+	&__box {
+		width: 100%;
+		height: auto;
+		margin: 0 0 1.1rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-self: center;
+		background-color: $white;
+		border-radius: 0.9rem;
+
+		@media (min-width: 1020px) {
+			width: 29rem;
+			margin: 0 1rem 2rem 1rem;
+		}
+		&--imgcontent {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			&--new {
+				width: 5rem;
+				height: 1.8rem;
+				background-color: $tertiary-color;
+				border-radius: 0.125rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				margin: 1rem;
+				&--content {
+					color: $green-font;
+					text-align: center;
+					font-family: "Roboto", sans-serif;
+					font-size: 0.875rem;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+				}
+			}
+			&--img {
+				width: 100%;
+				height: 14.4375rem;
+				object-fit: cover;
+				border-radius: 0.9rem 0.9rem 0 0;
+			}
+		}
+
+		&__content {
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 1rem 1rem 0 1rem;
+			align-items: center;
+			&--content {
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				&--title {
+					@include h4-title;
+				}
+				&--text {
+					color: $black;
+					font-family: "Roboto", sans-serif;
+					font-size: 1rem;
+					font-style: normal;
+					font-weight: 300;
+					line-height: normal;
+				}
+			}
+		}
+	}
+}

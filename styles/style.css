@@ -1,3 +1,19 @@
+@keyframes dislike {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes like {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -37,87 +53,6 @@
   color: #353535;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  height: auto;
-  background-color: #353535;
-  padding: 1.8rem;
-}
-@media (min-width: 1020px) {
-  .info {
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    height: 7rem;
-  }
-}
-.info__title {
-  color: #fff;
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-bottom: 1rem;
-}
-@media (min-width: 1020px) {
-  .info__title {
-    padding: 0 0 0 1rem;
-    margin: 0;
-  }
-}
-.info__bigbox {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.4rem;
-}
-@media (min-width: 1020px) {
-  .info__bigbox {
-    flex-direction: row;
-  }
-}
-.info__content {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-@media (min-width: 1020px) {
-  .info__content {
-    padding-right: 2rem;
-  }
-  .info__content:first-of-type {
-    padding-right: 0.5rem;
-  }
-}
-.info__content--logo {
-  width: 0.6rem;
-  height: 0.8rem;
-  margin-right: 1rem;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-Body {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-
 .reservation {
   display: flex;
   flex-direction: column;
@@ -144,32 +79,6 @@ Body {
   font-weight: 300;
   line-height: normal;
   color: #353535;
-}
-.reservation__navbutton {
-  width: 13.625rem;
-  height: 3.125rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1.5625rem;
-  margin: 2rem 2rem 1rem 2rem;
-  background: linear-gradient(0deg, #9356dc -20.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  opacity: 1;
-  transition: opacity 0.5s ease-out;
-}
-.reservation__navbutton--content {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.reservation__navbutton:hover {
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
-  opacity: 0.7;
-  transition: opacity 0.5s ease-out;
 }
 
 .fonctionnement {
@@ -393,16 +302,84 @@ Body {
   font-weight: 300;
   line-height: normal;
 }
-.restaurants__box__content .btnHeart {
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+  padding: 1.8rem;
+}
+@media (min-width: 1020px) {
+  .info {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 7rem;
+  }
+}
+.info__title {
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+@media (min-width: 1020px) {
+  .info__title {
+    padding: 0 0 0 1rem;
+    margin: 0;
+  }
+}
+.info__bigbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+@media (min-width: 1020px) {
+  .info__bigbox {
+    flex-direction: row;
+  }
+}
+.info__content {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (min-width: 1020px) {
+  .info__content {
+    padding-right: 2rem;
+  }
+  .info__content:first-of-type {
+    padding-right: 0.5rem;
+  }
+}
+.info__content--logo {
+  width: 0.6rem;
+  height: 0.8rem;
+  margin-right: 1rem;
+}
+
+.btnHeart {
   display: none;
 }
-.restaurants__box__content .btnHeart:checked + .btnLabel .fa-solid {
+
+.btnHeart:checked + .btnLabel .fa-solid {
   animation: dislike 0.2s ease-out normal forwards;
 }
-.restaurants__box__content .btnHeart:checked + .btnLabel .fa-regular {
+
+.btnHeart:checked + .btnLabel .fa-regular {
   animation: like 0.2s ease-out normal forwards;
 }
-.restaurants__box__content .btnLabel {
+
+.btnLabel {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -410,11 +387,11 @@ Body {
   height: auto;
   margin-right: 1rem;
 }
-.restaurants__box__content .btnLabel__like {
+.btnLabel__like {
   font-size: 1.5rem;
   position: absolute;
 }
-.restaurants__box__content .btnLabel .heart-full {
+.btnLabel .heart-full {
   color: transparent;
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
@@ -422,19 +399,46 @@ Body {
   opacity: 0;
 }
 
-@keyframes dislike {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.purple__button {
+  width: 13.625rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5625rem;
+  margin: 2rem 2rem 1rem 2rem;
+  background: linear-gradient(0deg, #9356dc -20.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
 }
-@keyframes like {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.purple__button--content {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.purple__button:hover {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+  opacity: 0.7;
+  transition: opacity 0.5s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+Body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
