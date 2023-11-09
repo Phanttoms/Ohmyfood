@@ -44,7 +44,14 @@
   width: 100%;
   height: auto;
   background-color: #353535;
-  padding: 1.5rem;
+  padding: 1.8rem;
+}
+@media (min-width: 1020px) {
+  .info {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 7rem;
+  }
 }
 .info__title {
   color: #fff;
@@ -55,11 +62,22 @@
   line-height: normal;
   padding-bottom: 1rem;
 }
+@media (min-width: 1020px) {
+  .info__title {
+    padding: 0 0 0 1rem;
+    margin: 0;
+  }
+}
 .info__bigbox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.4rem;
+}
+@media (min-width: 1020px) {
+  .info__bigbox {
+    flex-direction: row;
+  }
 }
 .info__bigbox--content {
   color: #fff;
@@ -68,6 +86,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+@media (min-width: 1020px) {
+  .info__bigbox--content {
+    padding-right: 2rem;
+  }
 }
 .info__bigbox--content--logo {
   width: 0.6rem;
@@ -148,9 +171,16 @@ Body {
 
 .fonctionnement {
   display: flex;
+  width: 100%;
+  height: auto;
   flex-direction: column;
-  justify-content: flex-start;
   padding: 3rem 0 1.5rem 1.25rem;
+}
+@media (min-width: 1020px) {
+  .fonctionnement {
+    max-width: 1020px;
+    margin: auto;
+  }
 }
 .fonctionnement__title {
   font-family: "Roboto", sans-serif;
@@ -167,6 +197,11 @@ Body {
   align-items: center;
   padding: 1.6rem;
 }
+@media (min-width: 1020px) {
+  .fonctionnement__bigbox {
+    flex-direction: row;
+  }
+}
 .fonctionnement__bigbox__box {
   display: flex;
   flex-direction: row;
@@ -177,6 +212,11 @@ Body {
   background: #f6f6f6;
   border-radius: 1.25rem;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1020px) {
+  .fonctionnement__bigbox__box {
+    margin-right: 2.2rem;
+  }
 }
 .fonctionnement__bigbox__box--circle {
   display: flex;
@@ -228,9 +268,16 @@ Body {
 .restaurants {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   background-color: #f6f6f6;
   padding: 3.4rem 1.1rem 4.1rem 1.1rem;
+}
+.restaurants__content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-width: 1020px;
+  width: 100%;
 }
 .restaurants__title {
   font-family: "Roboto", sans-serif;
@@ -241,11 +288,23 @@ Body {
   color: #000;
   margin-bottom: 1.1rem;
 }
+@media (min-width: 1020px) {
+  .restaurants__title {
+    padding-left: 2rem;
+  }
+}
 .restaurants__bigbox {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
+}
+@media (min-width: 1020px) {
+  .restaurants__bigbox {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .restaurants__bigbox__box {
   width: 100%;
@@ -257,6 +316,12 @@ Body {
   align-self: center;
   background-color: #fff;
   border-radius: 0.9rem;
+}
+@media (min-width: 1020px) {
+  .restaurants__bigbox__box {
+    width: 29rem;
+    margin: 0 1rem 2rem 1rem;
+  }
 }
 .restaurants__bigbox__box--imgcontent {
   width: 100%;
