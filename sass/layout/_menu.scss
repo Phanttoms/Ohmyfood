@@ -1,0 +1,77 @@
+// 1er Section | Img
+.box {
+	width: 100%;
+	height: 13.7rem;
+	position: relative;
+	&__img {
+		object-fit: cover;
+		height: 17.1rem;
+		width: 100%;
+		position: absolute;
+	}
+}
+
+// 2eme Section | Menu
+.menu {
+	display: flex;
+	flex-direction: column;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+		background-color: $main-background;
+		width: 100%;
+		height: auto;
+		border-radius: 1.8rem 1.8rem 0 0;
+	}
+	&__boxTitle {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem 1rem 2.5rem 1.5rem;
+		&--title {
+			@include h2-title-menu;
+			height: auto;
+		}
+		.btnLabelMenu {
+			display: flex;
+			align-items: center;
+			width: 1.3rem;
+			height: auto;
+			margin: 0 1rem 0 2rem;
+		}
+	}
+}
+
+.menuBox {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	&__title {
+		width: 2.5rem;
+		height: 1.6875rem;
+		@include h3-title-menu;
+		border-bottom: 3px solid $tertiary-color;
+	}
+	.menuCarte {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		background-color: $white;
+		&__content {
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__price {
+			align-self: flex-end;
+		}
+	}
+}

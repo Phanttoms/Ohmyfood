@@ -221,6 +221,14 @@
 					line-height: normal;
 				}
 			}
+			.btnLabel {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				width: 100%;
+				height: auto;
+				margin-right: 1rem;
+			}
 		}
 	}
 }
