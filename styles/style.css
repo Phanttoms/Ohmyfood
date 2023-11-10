@@ -433,6 +433,9 @@
   overflow: hidden;
   position: relative;
 }
+.menuBox .menuCarte:hover {
+  cursor: pointer;
+}
 .menuBox .menuCarte__content {
   width: 100%;
   height: auto;
