@@ -1,26 +1,3 @@
-// Heart button
-.btnHeart {
-	display: none;
-}
-.btnHeart:checked + .btnCheck .fa-solid {
-	animation: dislike 0.2s ease-out normal forwards;
-}
-.btnHeart:checked + .btnCheck .fa-regular {
-	animation: like 0.2s ease-out normal forwards;
-}
-
-.btnLabel__like {
-	font-size: 1.5rem;
-	position: absolute;
-}
-.heart-full {
-	color: transparent;
-	background-image: linear-gradient($secondary-color, $main-color);
-	background-clip: text;
-	-webkit-background-clip: text;
-	opacity: 0;
-}
-
 // Purple Button
 .purple__button {
 	width: 13.625rem;
@@ -53,6 +30,12 @@
 	}
 }
 
+// Purple Button Menu
+.btn__menu {
+	align-self: center;
+	margin: 2.5rem;
+}
+
 // Return Button
 .return__button {
 	position: absolute;
@@ -64,4 +47,36 @@
 	height: auto;
 	z-index: 2;
 	color: $dark-grey;
+}
+
+// Carte Button checked
+.btn__carte {
+	display: none;
+}
+
+.btn__carte:checked + .menuCarte--label .menuCarte__check {
+	animation: check 0.5s ease-in-out normal both;
+}
+
+.btn__carte:not(:checked) + .menuCarte--label .menuCarte__check {
+	animation: uncheck 0.3s ease-in-out normal both;
+}
+
+.btn__carte:checked + .menuCarte--label .center__check {
+	animation: rotation-check 0.7s linear normal forwards;
+}
+
+.menuCarte__check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $tertiary-color;
+	border-radius: 0 1rem 1rem 0;
+	transform: translateX(200%);
+	.center__check {
+		background-image: linear-gradient(white, white);
+		color: transparent;
+		background-clip: text;
+		-webkit-background-clip: text;
+	}
 }

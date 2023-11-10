@@ -36,6 +36,18 @@
 	color: $black;
 }
 
+@mixin h4-title-menu {
+	overflow: hidden;
+	color: $black;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
 @mixin h4-footer {
 	color: $white;
 	font-family: "Shrikhand", sans-serif;

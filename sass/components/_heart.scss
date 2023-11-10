@@ -1,0 +1,22 @@
+// Heart button
+.btnHeart {
+	display: none;
+}
+.btnHeart:checked + .btnCheck .fa-solid {
+	animation: dislike 0.2s ease-out normal forwards;
+}
+.btnHeart:checked + .btnCheck .fa-regular {
+	animation: like 0.2s ease-out normal forwards;
+}
+
+.btnLabel__like {
+	font-size: 1.5rem;
+	position: absolute;
+}
+.heart-full {
+	color: transparent;
+	background-image: linear-gradient($secondary-color, $main-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	opacity: 0;
+}
