@@ -3,11 +3,14 @@
 @import "./../sass/utils/_mixin.scss";
 @import "./../sass/animation/_animation.scss";
 @import "./../sass/layout/_header.scss";
-@import "./../sass/layout/_homepage.scss";
 @import "./../sass/layout/_menu.scss";
 @import "./../sass/layout/_footer.scss";
 @import "./../sass/components/_button.scss";
 @import "./../sass/components/_heart.scss";
+@import "./../sass/layout/homepage/_reservation.scss";
+@import "./../sass/layout/homepage/_fonctionnement.scss";
+@import "./../sass/layout/homepage/_restaurants.scss";
+@import "./../sass/components/_loader.scss";
 
 // Reset General
 * {
@@ -26,4 +29,10 @@ Body {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
+}
+
+// Alldoc
+.alldoc {
+	position: relative;
+	animation: content-appear 3.5s ease-in-out both;
 }
