@@ -73,24 +73,20 @@
 		height: auto;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
 		background-color: $white;
+		justify-content: space-between;
 		border-radius: 1rem;
 		margin-top: 1rem;
 		overflow: hidden;
 		position: relative;
+		cursor: pointer;
 		&:hover {
-			cursor: pointer;
-			.plate__confirmation {
-				margin-right: 0rem;
-
-				i {
-					transform: rotate(360deg);
-				}
+			.btnCheckMenu {
+				width: 20%;
 			}
 		}
 		&__content {
-			width: 100%;
+			width: 75%;
 			height: auto;
 			display: flex;
 			flex-direction: column;
@@ -99,11 +95,13 @@
 			padding: 0.84rem;
 			&__title {
 				@include h4-title-menu;
+				word-break: break-word;
 			}
 			&__text {
 				overflow: hidden;
 				color: $black;
 				text-overflow: ellipsis;
+				word-break: break-word;
 				white-space: nowrap;
 				font-family: "Roboto", sans-serif;
 				font-size: 0.9rem;
@@ -114,35 +112,28 @@
 		}
 		&__price {
 			display: flex;
-			align-self: flex-end;
-			top: 1.9rem;
-			padding: 0.84rem;
+			width: 20%;
+			align-items: flex-end;
+			justify-content: flex-end;
+			padding: 0 1rem 0.84rem 0;
 			color: $dark-grey;
 			font-family: "Roboto", sans-serif;
 			font-size: 0.94rem;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
-			position: absolute;
 		}
-		.plate__confirmation {
+		.btnCheckMenu {
 			background-color: $tertiary-color;
 			color: $white;
 			border-top-right-radius: 1rem;
 			cursor: pointer;
 			border-bottom-right-radius: 1rem;
-			width: 5.5rem;
+			width: 0;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin: -0.75rem -5.5rem -0.75rem 1rem;
-			transition: margin-right 750ms ease;
-
-			i {
-				transform: rotate(0);
-				transition: transform 750ms ease;
-				font-size: 1.5rem;
-			}
+			transition: all 500ms ease-in-out;
 		}
 	}
 }

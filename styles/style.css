@@ -172,24 +172,19 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: #fff;
+  justify-content: space-between;
   border-radius: 1rem;
   margin-top: 1rem;
   overflow: hidden;
   position: relative;
-}
-.menuBox .menuCarte:hover {
   cursor: pointer;
 }
-.menuBox .menuCarte:hover .plate__confirmation {
-  margin-right: 0rem;
-}
-.menuBox .menuCarte:hover .plate__confirmation i {
-  transform: rotate(360deg);
+.menuBox .menuCarte:hover .btnCheckMenu {
+  width: 20%;
 }
 .menuBox .menuCarte__content {
-  width: 100%;
+  width: 75%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -207,11 +202,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  word-break: break-word;
 }
 .menuBox .menuCarte__content__text {
   overflow: hidden;
   color: #000;
   text-overflow: ellipsis;
+  word-break: break-word;
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
@@ -221,34 +218,28 @@
 }
 .menuBox .menuCarte__price {
   display: flex;
-  align-self: flex-end;
-  top: 1.9rem;
-  padding: 0.84rem;
+  width: 20%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 1rem 0.84rem 0;
   color: #353535;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  position: absolute;
 }
-.menuBox .menuCarte .plate__confirmation {
+.menuBox .menuCarte .btnCheckMenu {
   background-color: #99e2d0;
   color: #fff;
   border-top-right-radius: 1rem;
   cursor: pointer;
   border-bottom-right-radius: 1rem;
-  width: 5.5rem;
+  width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -0.75rem -5.5rem -0.75rem 1rem;
-  transition: margin-right 750ms ease;
-}
-.menuBox .menuCarte .plate__confirmation i {
-  transform: rotate(0);
-  transition: transform 750ms ease;
-  font-size: 1.5rem;
+  transition: all 500ms ease-in-out;
 }
 
 .menuBox--1 {
@@ -377,11 +368,8 @@
 .btnCheckbox {
   display: none;
 }
-.btnCheckbox:checked + .label__check {
-  margin-right: 0rem;
-}
-.btnCheckbox:checked + .label__check i {
-  transform: rotate(360deg);
+.btnCheckbox:checked + .menuCarte .btnCheckMenu {
+  width: 20%;
 }
 
 .btnHeart {
