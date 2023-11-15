@@ -235,6 +235,7 @@
   background-color: #99e2d0;
   color: #fff;
   border-top-right-radius: 1rem;
+  cursor: pointer;
   border-bottom-right-radius: 1rem;
   width: 5.5rem;
   display: flex;
@@ -370,6 +371,16 @@
   height: auto;
   z-index: 2;
   color: #353535;
+}
+
+.btnCheckbox {
+  display: none;
+}
+.btnCheckbox:checked + .label__check {
+  margin-right: 0rem;
+}
+.btnCheckbox:checked + .label__check i {
+  transform: rotate(360deg);
 }
 
 .btnHeart {

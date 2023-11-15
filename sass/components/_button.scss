@@ -48,3 +48,14 @@
 	z-index: 2;
 	color: $dark-grey;
 }
+
+// Checkbox
+.btnCheckbox {
+	display: none;
+	&:checked + .label__check {
+		margin-right: 0rem;
+	}
+	&:checked + .label__check i {
+		transform: rotate(360deg);
+	}
+}
