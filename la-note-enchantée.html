@@ -23,15 +23,15 @@
         <!-- Main Content Page -->
         <main class="main">
             <!-- Section 1 | Img -->
-            <section class="box">
-                <img class="box__img" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-            </section>
+            <div class="box">
+                <img class="box__img" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Asiette garnie">
+            </div>
             <!-- Section 2 | Menu -->
-            <section class="menu">
+            <div class="menu">
                 <article class="menu__content">
                     <div class="menu__boxTitle">
                         <h2 class="menu__boxTitle--title">La note enchantée</h2>
-                        <input class="btnHeart" type="checkbox" id="btnControl-one" />
+                        <input class="btnHeart" type="checkbox" id="btnControl-one">
                         <label class="btnLabelMenu btnCheck" for="btnControl-one">
                             <i class="btnLabel__like fa-regular fa-heart"></i>
                             <i class="btnLabel__like heart-full fa-solid fa-heart"></i>
@@ -41,151 +41,101 @@
                     <div class="full-menu">
                         <div class="menuBox menuBox--1">
                             <h3 class="menuBox__title">Entrées</h3>
-                            <input class="btn__carte" type="checkbox" id="entrees-one" />
-                            <label class="menuCarte--label" for="entrees-one">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Ravioles de foie gras</h4>
-                                        <p class="menuCarte__content__text">Accompagnées de leur crème à la truffe</p>
-                                    </div>
-                                    <p class="menuCarte__price">25€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Ravioles de foie gras</h4>
+                                    <p class="menuCarte__content__text">Accompagnées de leur crème à la truffe</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="entrees-two" />
-                            <label class="menuCarte--label" for="entrees-two">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Caviar osciètre</h4>
-                                        <p class="menuCarte__content__text">Sur blini à la farine de blé noir</p>
-                                    </div>
-                                    <p class="menuCarte__price">35€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">25€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Caviar osciètre</h4>
+                                    <p class="menuCarte__content__text">Sur blini à la farine de blé noir</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="entrees-three" />
-                            <label class="menuCarte--label" for="entrees-three">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Homard et espuma de potiron</h4>
-                                        <p class="menuCarte__content__text">Marinés aux zestes d'orange</p>
-                                    </div>
-                                    <p class="menuCarte__price">20€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">35€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Homard et espuma de potiron</h4>
+                                    <p class="menuCarte__content__text">Marinés aux zestes d'orange</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="entrees-four" />
-                            <label class="menuCarte--label" for="entrees-four">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Foie gras de canard cuit entier</h4>
-                                        <p class="menuCarte__content__text">Confiture de figue et pain toasté</p>
-                                    </div>
-                                    <p class="menuCarte__price">35€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">20€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Foie gras de canard cuit entier</h4>
+                                    <p class="menuCarte__content__text">Confiture de figue et pain toasté</p>
                                 </div>
-                            </label>
+                                <p class="menuCarte__price">35€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
                         </div>
                         <!-- 2eme List | Plats -->
                         <div class="menuBox menuBox--2">
                             <h3 class="menuBox__title">Plats</h3>
-                            <input class="btn__carte" type="checkbox" id="plats-one" />
-                            <label class="menuCarte--label" for="plats-one">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Noix de coquilles Saint-Jacques</h4>
-                                        <p class="menuCarte__content__text">Sur lit de purée de céleri-rave</p>
-                                    </div>
-                                    <p class="menuCarte__price">40€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Noix de coquilles Saint-Jacques</h4>
+                                    <p class="menuCarte__content__text">Sur lit de purée de céleri-rave</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="plats-two" />
-                            <label class="menuCarte--label" for="plats-two">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Langoustine poêlée</h4>
-                                        <p class="menuCarte__content__text">Purée de patate douce</p>
-                                    </div>
-                                    <p class="menuCarte__price">35€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">40€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Langoustine poêlée</h4>
+                                    <p class="menuCarte__content__text">Purée de patate douce</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="plats-three" />
-                            <label class="menuCarte--label" for="plats-three">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Mijoté de queue de bœuf</h4>
-                                        <p class="menuCarte__content__text">Et riz sauvage aux zestes de citron</p>
-                                    </div>
-                                    <p class="menuCarte__price">45€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">35€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Mijoté de queue de bœuf</h4>
+                                    <p class="menuCarte__content__text">Et riz sauvage aux zestes de citron</p>
                                 </div>
-                            </label>
+                                <p class="menuCarte__price">45€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
                         </div>
                         <!-- 3eme List | Desserts -->
                         <div class="menuBox menuBox--3">
                             <h3 class="menuBox__title">Desserts</h3>
-                            <input class="btn__carte" type="checkbox" id="desserts-one" />
-                            <label class="menuCarte--label" for="desserts-one">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Macaron noisette et chocolat</h4>
-                                        <p class="menuCarte__content__text">Glace au caramel brun et sel de Guérande</p>
-                                    </div>
-                                    <p class="menuCarte__price">18€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Macaron noisette et chocolat</h4>
+                                    <p class="menuCarte__content__text">Glace au caramel brun et sel de Guérande</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="desserts-two" />
-                            <label class="menuCarte--label" for="desserts-two">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Baba au rhum revisité</h4>
-                                        <p class="menuCarte__content__text">Avec son coulis de citron</p>
-                                    </div>
-                                    <p class="menuCarte__price">22€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">18€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Baba au rhum revisité</h4>
+                                    <p class="menuCarte__content__text">Avec son coulis de citron</p>
                                 </div>
-                            </label>
-                            <input class="btn__carte" type="checkbox" id="desserts-three" />
-                            <label class="menuCarte--label" for="desserts-three">
-                                <div class="menuCarte">
-                                    <div class="menuCarte__content">
-                                        <h4 class="menuCarte__content__title">Tarte au citron meringuée</h4>
-                                        <p class="menuCarte__content__text">Déstructurée</p>
-                                    </div>
-                                    <p class="menuCarte__price">23€</p>
-                                    <div class="menuCarte__check">
-                                        <i class="center__check fa-solid fa-circle-check"></i>
-                                    </div>
+                                <p class="menuCarte__price">22€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
+                            <div class="menuCarte">
+                                <div class="menuCarte__content">
+                                    <h4 class="menuCarte__content__title">Tarte au citron meringuée</h4>
+                                    <p class="menuCarte__content__text">Déstructurée</p>
                                 </div>
-                            </label>
+                                <p class="menuCarte__price">23€</p>
+                                <div class="plate__confirmation"><i class="fa-solid fa-circle-check"></i></div>
+                            </div>
                         </div>
                         <a class="purple__button btn__menu" href="#">
                             <p class="purple__button--content">Commander</p>
                         </a>
                     </div>
                 </article>
-            </section>
+            </div>
 
         </main>
         <footer class="info">
@@ -196,7 +146,7 @@
                 <p class="info__content"><i class="info__content--logo fa-solid fa-handshake-angle"></i>Devenir
                     partenaire</p>
                 <p class="info__content">Mentions légales</p>
-                <p class="info__content">Contact</p>
+                <p class="info__content"><a href="#">Contact</a></p>
             </div>
         </footer>
     </div>

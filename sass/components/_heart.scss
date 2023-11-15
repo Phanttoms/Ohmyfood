@@ -9,9 +9,20 @@
 	animation: like 0.2s ease-out normal forwards;
 }
 
+.btnLabel {
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	top: -30px;
+	margin: 0 1.5rem 0 0;
+}
+
 .btnLabel__like {
 	font-size: 1.5rem;
 	position: absolute;
+	&:hover {
+		cursor: pointer;
+	}
 }
 .heart-full {
 	color: transparent;

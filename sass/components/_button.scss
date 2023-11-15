@@ -48,36 +48,3 @@
 	z-index: 2;
 	color: $dark-grey;
 }
-
-// Carte Button checked
-.btn__carte {
-	display: none;
-}
-
-.btn__carte:checked + .menuCarte--label .menuCarte__check {
-	animation: check 0.5s ease-in-out normal both;
-}
-
-.btn__carte:not(:checked) + .menuCarte--label .menuCarte__check {
-	animation: uncheck 0.3s ease-in-out normal both;
-}
-
-.btn__carte:checked + .menuCarte--label .center__check {
-	animation: rotation-check 0.7s linear normal forwards;
-}
-
-.menuCarte__check {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: $tertiary-color;
-	border-radius: 0 1rem 1rem 0;
-	transform: translateX(200%);
-	.center__check {
-		background-image: linear-gradient(white, white);
-		color: transparent;
-		background-clip: text;
-		-webkit-background-clip: text;
-		font-size: 1.5rem;
-	}
-}

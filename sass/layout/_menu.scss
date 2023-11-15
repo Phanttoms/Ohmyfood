@@ -81,6 +81,13 @@
 		position: relative;
 		&:hover {
 			cursor: pointer;
+			.plate__confirmation {
+				margin-right: 0rem;
+
+				i {
+					transform: rotate(360deg);
+				}
+			}
 		}
 		&__content {
 			width: 100%;
@@ -116,6 +123,24 @@
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
+		}
+		.plate__confirmation {
+			background-color: $tertiary-color;
+			color: $white;
+			border-top-right-radius: 1rem;
+			border-bottom-right-radius: 1rem;
+			width: 5.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: -0.75rem -5.5rem -0.75rem 1rem;
+			transition: margin-right 750ms ease;
+
+			i {
+				transform: rotate(0);
+				transition: transform 750ms ease;
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
