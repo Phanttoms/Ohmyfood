@@ -222,14 +222,15 @@
 .menuBox .menuCarte__price {
   display: flex;
   align-self: flex-end;
+  top: 1.9rem;
   padding: 0.84rem;
   color: #353535;
-  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 0.94rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: absolute;
 }
 .menuBox .menuCarte .plate__confirmation {
   background-color: #99e2d0;

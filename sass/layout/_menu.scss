@@ -115,14 +115,15 @@
 		&__price {
 			display: flex;
 			align-self: flex-end;
+			top: 1.9rem;
 			padding: 0.84rem;
 			color: $dark-grey;
-			text-align: center;
 			font-family: "Roboto", sans-serif;
 			font-size: 0.94rem;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
+			position: absolute;
 		}
 		.plate__confirmation {
 			background-color: $tertiary-color;
