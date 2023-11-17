@@ -55,4 +55,7 @@
 	&:checked + .menuCarte .btnCheckMenu {
 		width: 5rem;
 	}
+	&:checked + .menuCarte i {
+		transform: rotate(0deg);
+	}
 }

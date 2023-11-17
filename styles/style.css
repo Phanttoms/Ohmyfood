@@ -183,6 +183,9 @@
 .menuBox .menuCarte:hover .btnCheckMenu {
   width: 5rem;
 }
+.menuBox .menuCarte:hover .btnCheckMenu i {
+  transform: rotate(0deg);
+}
 .menuBox .menuCarte__content {
   width: 70%;
   height: auto;
@@ -240,6 +243,10 @@
   align-items: center;
   justify-content: center;
   transition: all 500ms ease-in-out;
+}
+.menuBox .menuCarte .btnCheckMenu i {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
 }
 
 .menuBox--1 {
@@ -370,6 +377,9 @@
 }
 .btnCheckbox:checked + .menuCarte .btnCheckMenu {
   width: 5rem;
+}
+.btnCheckbox:checked + .menuCarte i {
+  transform: rotate(0deg);
 }
 
 .btnHeart {
