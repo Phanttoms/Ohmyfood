@@ -3,10 +3,13 @@
 	display: none;
 }
 .btnHeart:checked + .btnCheck .fa-solid {
-	animation: dislike 0.2s ease-out normal forwards;
+	// animation: dislike 0.2s ease-in-out normal forwards;
+	opacity: 1;
+	transform: scale(1);
 }
 .btnHeart:checked + .btnCheck .fa-regular {
-	animation: like 0.2s ease-out normal forwards;
+	// animation: like 0.2s ease-in-out normal forwards;
+	opacity: 0;
 }
 
 .btnLabel {
@@ -20,6 +23,7 @@
 .btnLabel__like {
 	font-size: 1.5rem;
 	position: absolute;
+	transition: all 500ms ease-in-out;
 	&:hover {
 		cursor: pointer;
 	}

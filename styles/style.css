@@ -1,19 +1,26 @@
+/* Ancienne animation
 @keyframes dislike {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
+
 @keyframes like {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0);
+	}
 }
+*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -388,11 +395,12 @@
 }
 
 .btnHeart:checked + .btnCheck .fa-solid {
-  animation: dislike 0.2s ease-out normal forwards;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .btnHeart:checked + .btnCheck .fa-regular {
-  animation: like 0.2s ease-out normal forwards;
+  opacity: 0;
 }
 
 .btnLabel {
@@ -406,6 +414,7 @@
 .btnLabel__like {
   font-size: 1.5rem;
   position: absolute;
+  transition: all 500ms ease-in-out;
 }
 .btnLabel__like:hover {
   cursor: pointer;
